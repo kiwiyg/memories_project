@@ -12,8 +12,9 @@ export default makeStyles((theme) => ({
     padding: '10px 50px',
   },
   heading: {
-    color: 'rgba(0,183,255, 1)',
-    textDecoration: 'none',
+    color: 'rgba(85, 4, 122, 0.991)',
+    fontFamily: 'w3-cursive',
+    textDecoration: 'underline 5px',
   },
   image: {
     marginLeft: '15px',
