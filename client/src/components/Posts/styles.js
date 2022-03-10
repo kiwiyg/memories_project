@@ -31,6 +31,7 @@ export default makeStyles((theme) => ({
   userName: {
     display: 'flex',
     alignItems: 'center',
+    fontFamily: 'w3-cursive',
   },
   brandContainer: {
     display: 'flex',
@@ -49,6 +50,8 @@ export default makeStyles((theme) => ({
     },
     heading: {
       display: 'none',
+      fontFamily: 'w3-cursive',
+      textDecoration: 'underline 5px',
     },
     userName: {
       display: 'none',

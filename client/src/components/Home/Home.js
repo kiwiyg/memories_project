@@ -6,6 +6,7 @@ import { getPosts } from "../../actions/posts";
 import Posts from "../Posts/Posts";
 import Form from "../Form/Form";
 
+
 const Home = () => {
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const Home = () => {
       <Container>
         <Grid
           container
-          justify="space-between"
+          justifyContent="space-between"
           alignItems="stretch"
           spacing={3}
         >
