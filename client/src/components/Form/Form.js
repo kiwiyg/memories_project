@@ -51,7 +51,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <Typography variant="h6">{currentId ? `Editing "${post.title}"` : '𝐂𝐫𝐞𝐚𝐭𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐦𝐞𝐦𝐨𝐫𝐲'}</Typography>
         <TextField name="title" variant="outlined" label="Ｔｉｔｌｅ" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
         <TextField name="message" variant="outlined" label="Ｍｅｓｓａｇｅ" fullWidth multiline rows={4} value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
-        <TextField name="tags" variant="outlined" label="Ｔａｇｓ (𝓬𝓸𝓶𝓶𝓪 𝓼𝓮𝓹𝓮𝓻𝓪𝓽𝓮𝓭)" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(',') })} />
+        <TextField name="tags" variant="outlined" label="Ｔａｇｓ (comma seperated)" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(',') })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} />Select your image</div>
         <Button className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Ｓｕｂｍｉｔ</Button>
         <Button variant="contained" color="secondary" size="small" onClick={clear} fullWidth>Ｃｌｅａｒ</Button>

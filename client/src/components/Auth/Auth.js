@@ -11,6 +11,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from "react-google-login";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import { useAlert } from "react-alert";
 
 import Icon from "./icon";
 import { signin, signup } from "../../actions/auth";

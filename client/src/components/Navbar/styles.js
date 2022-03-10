@@ -22,7 +22,7 @@ export default makeStyles((theme) => ({
 //   },
   image: {
 //    marginRight: '0px',
-//    padding: '0em 0em 0em 0em',
+    padding: '0em 2em',
 //    margin: 'auto',
     height: '120px',
   },
@@ -71,7 +71,7 @@ export default makeStyles((theme) => ({
     // },
     image: {
   //    marginRight: '0px',
-  //    padding: '0em 0em 0em 2em',
+      padding: '0em 2em',
   //    margin: 'auto',
       alignItems: 'center',
       height: '90px',
@@ -103,7 +103,7 @@ export default makeStyles((theme) => ({
         // },
         image: {
       //    marginRight: '0px',
-      //    padding: '0em 0.5em 0em 1em',
+          padding: '0em 0.5em',
       //    margin: 'auto',
           alignItems: 'center',
           height: '70px',
