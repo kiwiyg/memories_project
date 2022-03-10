@@ -5,7 +5,7 @@ export const signin = (formData, router) => async (dispatch) => {
   try {
     const { data } = await api.signIn(formData).catch((err) => {
       const { message } = err.response.data;
-      console.log(message);
+      alert(message);
     });
 
     dispatch({ type: AUTH, data });
@@ -18,7 +18,10 @@ export const signin = (formData, router) => async (dispatch) => {
 
 export const signup = (formData, router) => async (dispatch) => {
   try {
-    const { data } = await api.signUp(formData);
+    const { data } = await api.signUp(formData).catch((err) =>{
+      const { message } = err.response.data;
+      alert(message);
+    });
 
     dispatch({ type: AUTH, data });
 
